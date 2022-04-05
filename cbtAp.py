@@ -22,7 +22,7 @@ class Node:
       self.data = data
 
    def insert(self, data):
-# Compare the new value with the parent node
+
       if self.data:
          if data < self.data:
             if self.left is None:
@@ -37,7 +37,7 @@ class Node:
       else:
          self.data = data
 
-# Print the tree
+
    def PrintTree(self):
       if self.left:
          self.left.PrintTree()
@@ -45,7 +45,7 @@ class Node:
       if self.right:
          self.right.PrintTree()
 
-# Use the insert method to add nodes
+
 root = Node(12)
 root.insert(6)
 root.insert(14)
